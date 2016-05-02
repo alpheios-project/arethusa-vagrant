@@ -37,8 +37,8 @@ notepad Vagrantfile
 3. In the text editor with the Vagrantfile open, find the following lines
 
     ```
-    config.vm.synced_folder "/path/to/arethusa-example-data", "/arethusa-data/arethusa-example-data"
-    config.vm.synced_folder "/path/to/arethusa-configs", "/arethusa-data/arethusa-configs"
+    config.vm.synced_folder "/path/to/arethusa-example-data", "/arethusa-example-data"
+    config.vm.synced_folder "/path/to/arethusa-configs", "/arethusa-configs"
     ```
 
 4.
@@ -48,14 +48,6 @@ notepad Vagrantfile
 
 5. You may also need to change local port mappings and network card settings. Instructions are provided in the Vagrantfile
 
-## Run the Apps
-
-On the host machine __from within the local cloned copy of the arethusa-vagrant repository__:
-
-```
-vagrant up
-vagrant ssh
-```
-
-The vagrant ssh command will put you into the guest VM.
-
+6. Verify installation 
+   
+   You should be able to load the following in your browser: http://localhost:8081/arethusa/app/#/vagrant?doc=1.2&s=2
