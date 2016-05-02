@@ -45,7 +45,7 @@ Vagrant setup for Arethusa
 
     Replace `/path/to/arethusa-example-data` with the path to your local clone of the arethusa-example-data repo.
 
-    Replace `/path/to/arethusa-configs` with the path to your local clone of the canonical-latinLit repo.
+    Replace `/path/to/arethusa-configs` with the path to your local clone of the arethusa-configs repo
 
 5. You may also need to change local port mappings and network card settings. Instructions are provided in the Vagrantfile
 
@@ -54,3 +54,20 @@ Vagrant setup for Arethusa
    You should be able to load the following in your browser: [http://localhost:8081/arethusa/app/#/vagrant?doc=1.2&s=2](http://localhost:8081/arethusa/app/#/vagrant?doc=1.2&s=2)
 
    N.B. The vagrant config is currently a READ-ONLY file setup.
+
+## Testing Arethusa Config Changes
+
+1. Create a branch on your local clone of the arethusa-example-data repo
+2. Add a treebank file for testing into the arethusa-example-data/data/treebanks directory (make sure the treebank/@format attribute is set to the name of the format you want to test
+3. Create a branch on your local clone of the arethusa-configs repo
+4. Add/update your files
+5. Build on the vagrant box:
+    ```
+    vagrant ssh  (or on windows via putty telnet to localhost:2222 login as vagrant/vagrant)
+    cd /arethusa-configs
+    rvm use 2.0
+    rake build
+    ```
+6. Verify that your new/updated file is in the /arethusa-configs/dist directory 
+7. Load your testing treebank file in the local arethusa instance. E.g. [http://localhost:8081/arethusa/app/#/vagrant?doc=newfile&s=2](http://localhost:8081/arethusa/app/#/vagrant?doc=newfile&s=1)
+    
