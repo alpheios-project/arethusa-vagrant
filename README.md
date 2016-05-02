@@ -68,6 +68,8 @@ Vagrant setup for Arethusa
     
     cd /arethusa-configs
     
+    git checkout yourbranch
+    
     rvm use 2.0
     
     rake build
