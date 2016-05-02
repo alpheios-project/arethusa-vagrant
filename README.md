@@ -50,4 +50,6 @@ notepad Vagrantfile
 
 6. Verify installation 
    
-   You should be able to load the following in your browser: http://localhost:8081/arethusa/app/#/vagrant?doc=1.2&s=2
+   You should be able to load the following in your browser: [http://localhost:8081/arethusa/app/#/vagrant?doc=1.2&s=2](http://localhost:8081/arethusa/app/#/vagrant?doc=1.2&s=2)
+
+   N.B. The vagrant config is currently a READ-ONLY file setup.
