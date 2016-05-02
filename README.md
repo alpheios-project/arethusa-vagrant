@@ -62,12 +62,17 @@ Vagrant setup for Arethusa
 3. Create a branch on your local clone of the arethusa-configs repo
 4. Add/update your files
 5. Build on the vagrant box:
+
     ```
     vagrant ssh  (or on windows via putty telnet to localhost:2222 login as vagrant/vagrant)
+    
     cd /arethusa-configs
+    
     rvm use 2.0
+    
     rake build
     ```
+   
 6. Verify that your new/updated file is in the /arethusa-configs/dist directory 
 7. Load your testing treebank file in the local arethusa instance. E.g. [http://localhost:8081/arethusa/app/#/vagrant?doc=newfile&s=2](http://localhost:8081/arethusa/app/#/vagrant?doc=newfile&s=1)
     
