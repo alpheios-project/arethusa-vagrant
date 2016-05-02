@@ -22,14 +22,14 @@ git clone https://github.com/alpheios-project/arethusa-vagrant
 On OS/X or Linux:
 
 ```
-cd vagrant-capitains-dev
+cd arethusa-vagrant
 vi Vagrantfile
 ```
 
 On Windows
 
 ```
-cd c:\\Users\My Documents\JohnSmith\vagrant-capitains-dev
+cd c:\\Users\My Documents\JohnSmith\arethusa-vagrant
 notepad Vagrantfile
 ```
 
