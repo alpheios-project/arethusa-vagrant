@@ -13,25 +13,25 @@ Vagrant setup for Arethusa
 ## Installation:
 
 1. Clone this repository
-```
-git clone https://github.com/alpheios-project/arethusa-vagrant
-```
+    ```
+    git clone https://github.com/alpheios-project/arethusa-vagrant
+    ```
 
 2. Edit the file named `Vagrantfile` in the newly cloned repository in a text editor. The following are example command-line instructions, but you can also navigate there in your File Explorer/Finder and use whatever text editor you are comfortable with.
 
-On OS/X or Linux:
+    On OS/X or Linux:
 
-```
-cd arethusa-vagrant
-vi Vagrantfile
-```
+    ```
+    cd arethusa-vagrant
+    vi Vagrantfile
+    ```
 
-On Windows
+    On Windows
 
-```
-cd c:\\Users\My Documents\JohnSmith\arethusa-vagrant
-notepad Vagrantfile
-```
+    ```
+    cd c:\\Users\My Documents\JohnSmith\arethusa-vagrant
+    notepad Vagrantfile
+    ```
 
 
 3. In the text editor with the Vagrantfile open, find the following lines
@@ -41,7 +41,8 @@ notepad Vagrantfile
     config.vm.synced_folder "/path/to/arethusa-configs", "/arethusa-configs"
     ```
 
-4.
+4. Edit the paths to your local github clones of the example data and arethusa-configs
+
     Replace `/path/to/arethusa-example-data` with the path to your local clone of the arethusa-example-data repo.
 
     Replace `/path/to/arethusa-configs` with the path to your local clone of the canonical-latinLit repo.
